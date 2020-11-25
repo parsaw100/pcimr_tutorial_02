@@ -1,0 +1,8 @@
+<launch>    
+
+    <param name="/scan_it/robot_type" type="string" value="$(env ROBOT)" />
+    <param name="/scan_it/safe_distance" type="double" value="0.2" />
+
+    <node pkg="scan_it" type="scan_it" name="finder" output="screen"/>
+
+</launch>
